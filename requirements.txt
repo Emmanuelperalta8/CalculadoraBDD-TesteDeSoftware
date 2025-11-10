@@ -1,0 +1,18 @@
+# ===========================================
+# Dependências do projeto "Calculadora BDD"
+# ===========================================
+
+# --- Framework de testes BDD ---
+behave==1.2.6
+
+# --- Interface gráfica moderna (Tkinter + Bootstrap) ---
+ttkbootstrap==1.10.1
+
+# --- Testes adicionais (opcional, para rodar com pytest) ---
+pytest==8.3.3
+
+# --- Suporte a tipagem e utilidades ---
+typing_extensions>=4.12.2
+
+# --- Apenas para compatibilidade com o ambiente (Python 3.10+) ---
+tk
