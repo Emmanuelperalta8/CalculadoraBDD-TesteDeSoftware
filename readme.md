@@ -1,114 +1,40 @@
-Perfeito, Peralta! Aqui está um README.md completo e bem formatado para você incluir no seu repositório do GitHub — explicando o projeto, os testes BDD e a interface gráfica moderna da calculadora:
+🚀 1️⃣ Clonar o repositório
+git clone https://github.com/seu-usuario/Calculadora-BDD.git
+cd Calculadora-BDD
 
-# 🧮 Calculadora BDD - Teste de Software
+⚙️ 2️⃣ Instalar as dependências
 
-Este projeto foi desenvolvido como parte da disciplina de **Teste de Software**, com o objetivo de aplicar **BDD (Behavior Driven Development)** utilizando a ferramenta **Behave** e criar uma **interface gráfica moderna** para uma calculadora funcional.
+(garanta que você esteja com o Python 3.10+)
 
----
+pip install -r requirements.txt
 
-## 🚀 Funcionalidades
+🧠 3️⃣ Rodar os testes BDD (com Behave)
 
-A calculadora permite realizar operações básicas e avançadas:
-
-- ➕ **Soma**
-- ➖ **Subtração**
-- ✖️ **Multiplicação**
-- ➗ **Divisão** (com tratamento de erro para divisão por zero)
-- √ **Raiz quadrada** (com tratamento de erro para números negativos)
-- 📊 **Cálculo de média** de uma lista de números
-
----
-
-## 🧩 Estrutura do Projeto
-
-
-
-📁 Teste de Sof. - Calculadora
-│
-├── 📁 features/ # Cenários de teste em linguagem Gherkin
-│ ├── calculadora.feature # Descrição dos testes BDD
-│
-├── 📁 src/ # Código-fonte principal
-│ ├── calculadora.py # Classe com a lógica da calculadora
-│ ├── app.py # Interface gráfica com ttkbootstrap
-│
-├── 📁 tests/ # Testes automatizados (se necessário)
-│
-├── README.md # Este arquivo :)
-└── requirements.txt # Dependências do projeto
-
-
----
-
-## 🧠 Tecnologias Utilizadas
-
-- **Python 3.10+**
-- **Behave** – Framework BDD
-- **tkinter** e **ttkbootstrap** – Interface gráfica moderna
-- **math** – Operações matemáticas básicas
-
----
-
-## 🧪 Testes BDD (Behavior Driven Development)
-
-Os testes seguem o formato **Gherkin**, simulando o comportamento do usuário interagindo com a calculadora.
-
-Exemplo de cenário:
-
-```gherkin
-Funcionalidade: Operações básicas da calculadora
-  Para realizar cálculos simples
-  Como um usuário
-  Eu quero usar a calculadora para somar números
-
-  Cenário: Somar dois números
-    Dado que iniciei a calculadora
-    Quando somo 5 e 3
-    Então o resultado deve ser 8
-
-
-Para executar os testes, use:
+Isso executa todos os cenários Gherkin do diretório features/.
 
 python -m behave
 
 
-Todos os cenários são validados pela classe Calculadora, garantindo o funcionamento correto das operações e tratamento de exceções.
+Se tudo estiver certo, você verá a saída:
 
-💻 Interface Gráfica
+1 feature passed, 0 failed
+32 scenarios passed, 0 failed
 
-A interface foi criada com ttkbootstrap, oferecendo um visual moderno e responsivo.
+💻 4️⃣ Executar a interface gráfica da calculadora
 
-Para executar a interface:
+Esse comando abre a calculadora moderna com ttkbootstrap:
+
 python -m src.app
 
 
-Ou:
+Ou, se preferir rodar diretamente:
 
 cd src
 python app.py
 
-⚙️ Instalação
-
-Clone o repositório:
-
-git clone https://github.com/seuusuario/calculadora-bdd.git
-cd calculadora-bdd
-
-
-Crie e ative um ambiente virtual (opcional, mas recomendado):
-
-python -m venv venv
-venv\Scripts\activate  # no Windows
-
-
-Instale as dependências:
-
-pip install behave ttkbootstrap
-
-
-Execute os testes ou a aplicação.
-
-🧑‍💻 Autor
-
-Emmanuel Peralta
-📘 Projeto desenvolvido para a disciplina de Teste de Software
+🧩 Resumo rápido dos comandos
+git clone https://github.com/seu-usuario/Calculadora-BDD.git
+cd Calculadora-BDD
+pip install -r requirements.txt
+python -m behave
+python -m src.app
